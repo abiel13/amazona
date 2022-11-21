@@ -1,0 +1,235 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none !important;
+  color: black;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  width: 9px;
+}
+
+body::-webkit-scrollbar-button{
+  background-color: #434343;
+}
+
+header{
+  background-color: #434343;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header svg{
+  font-size: 1.5em;
+ 
+}
+svg path{
+  position: relative;
+}
+
+header svg path::before{
+  content: ' ';
+ position: absolute;
+ /* z-index: 100; */
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+ background-color: red;
+}
+
+header button{
+  cursor: pointer;
+border: none;
+outline: none;
+padding: 5px 10px;
+color:white;
+background-color: rgb(235, 200, 5);
+font-weight: bolder;
+letter-spacing: 3px;
+border-radius: .2rem;
+}
+
+.splide__pagination{
+  margin: -2em !important;
+}
+
+footer{
+  position:absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.search{
+  background-color: white;
+  width: 20%;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.search input{
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  width: 80%;
+  position: absolute;
+  font-weight: bolder;
+  right: 0px;
+  color: #434343;
+  font-weight: 400;
+}
+
+.cart{
+  /* background-color: deeppink; */
+  position: relative;
+}
+
+
+
+.cart span{
+  position: absolute ;
+  top: -5px;
+width: 20px;
+height: 20px;
+font-weight: bolder;
+  right: -12px;
+  color: black;
+  font-size: x-small;
+  border-radius: 50%;
+  text-align: center;
+  background-color: red;
+  padding: 5px 5px;
+  color: white;
+  z-index: 10000;
+  /* position: relative; */
+}
+
+span b{
+position: relative;
+
+}
+
+.search svg{
+  font-size: 1.2em;
+  box-sizing: border-box;
+ fill: black;
+ z-index: 200;
+}
+
+.logo{
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: white;
+display: flex;
+align-items: center;
+  
+}
+
+.details{
+  padding: 10px;
+}
+
+.logo svg{
+  fill: gold;
+}
+main{
+  padding: 20px;
+}
+
+
+
+.product{
+/* border: 1px solid black; */
+/* box-shadow: 1px 1px 5px black; */
+width: 45ch;
+height: 70vh;
+padding: 10px;
+border-radius: .6rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.product .price{
+font-weight: bolder;
+
+}
+
+main{
+  margin-top:2rem;
+}
+
+.rates{
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  
+}
+
+.rates span{
+  font-size: .8rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+
+.rates svg{
+fill: gold;
+}
+
+.product img{ 
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  max-width: 300px;
+}
+
+
+
+
+.product button{
+  font-weight: 500;
+  padding: 5px 10px;
+  border: none;
+ margin-top: .4em;
+  outline: none;
+  background: #434343;
+  color: white;
+}
+
+.shoe{
+  margin-top: 4rem;
+}
+
+.shoe h3{
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px ;
+}
+
+.shoeCat{
+  width: 45ch;
+  object-fit: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.shoeCat img{
+  width: 100%;
+}
